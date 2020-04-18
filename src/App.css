@@ -1,0 +1,39 @@
+body {
+  background-image: url("https://cache.desktopnexus.com/cropped-wallpapers/2394/2394366-1920x1080-[DesktopNexus.com].jpg?st=pYTxf26SW0I3en2toBdvww&e=1587202374");
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    text-align: center;
+  }
+
+  
+  h1 {
+    margin: 0;
+    margin-bottom: .5rem;
+    font-size: 3rem;
+    color: gold;
+    font-weight: bold;
+
+  }
+  
+  .input {
+    border: 1px solid #333;
+    border-radius: .3em;
+    padding: .25rem;
+    width: 7em;
+  }
+  
+  select {
+    margin-left: .5rem;
+    border: 1px solid #333;
+    border-radius: .3em;
+    padding: .25rem;
+    width: 3.75rem;
+  }
+  
+  .equals {
+    font-weight: bold;
+    font-size: 2rem;
+  }
