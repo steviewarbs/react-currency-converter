@@ -7,6 +7,7 @@ import CurrencyRow from './CurrencyRow';
 //Base URL is taken from the free API service hosted at https://exchangeratesapi.io/
 
 const BASE_URL = "https://api.exchangeratesapi.io/latest"
+//const RATES_URL = "https://api.exchangeratesapi.io/latest?symbols=USD,GBP"
 
 //Create initial stae of the currency application
 
@@ -46,6 +47,7 @@ function App() {
     })
   }, [])
 
+
   useEffect(()=> {
     if(fromCurrency != null && toCurrency != null) {
       fetch(`${BASE_URL}?base=${fromCurrency}&symbols=${toCurrency}`)
@@ -65,6 +67,8 @@ function App() {
   setAmount(e.target.value)
   setAmountInFromCurrency(false)
 }
+
+
 
 //Returns the application to the index.js file
 
@@ -88,6 +92,7 @@ return (
   onChangeCurrency={e => setToCurrency(e.target.value)}
   onChangeAmount={handleToAmountChange}
   amount={toAmount}/>
+
 
 </React.Fragment>
 
